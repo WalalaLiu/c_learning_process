@@ -1,13 +1,8 @@
 #include<stdio.h>
-void max(int a,int b);
+#include"max_h.h"
 int main()
 {
-    int a=9,b=5,num_max=0;
-    max(a,b);
+    int a=9,b=5;
+    max_h(a,b);
     return 0;
-}
-
-void max(int a,int b)
-{
-    printf("%d\n",( a>b?a:b));
 }
