@@ -1,23 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
 void zifuzhizheng()
 {
-   char str[]="hello world";
-    char *p=str;
-    *p='m';
+    char str[] = "hello world";
+    char *p = str;
+    *p = 'm';
     p++;
-    *p='i';
-    printf("%s\n",str);
+    *p = 'i';
+    printf("%s\n", str);
 
-    p="mike jiang";
-    printf("%s\n",p);
+    p = "mike jiang";
+    printf("%s\n", p);
 
-    char *q="test";
-    printf("%s\n",q);
+    char *q = "test";
+    printf("%s\n", q);
 }
 
-void mystrcat(char *dest,const char *src)
+void mystrcat(char *dest, const char *src)
 {
-    int len1=0,len2=0;
+    int len1 = 0, len2 = 0;
     while (dest[len1])
     {
         len1++;
@@ -25,13 +25,12 @@ void mystrcat(char *dest,const char *src)
     while (src[len2])
     {
         len2++;
-    }//前两步都是用来统计两个数组的长度；
+    } // 前两步都是用来统计两个数组的长度；
     int i;
-    for(i=0;i<len2;i++)
+    for (i = 0; i < len2; i++)
     {
-        dest[len1+i]=src[i];
-    }//把src的字符接在dest的后面；
-    
+        dest[len1 + i] = src[i];
+    } // 把src的字符接在dest的后面；
 }
 int main()
 {
