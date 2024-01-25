@@ -31,14 +31,24 @@ void mystrcat(char *dest, const char *src)
     {
         dest[len1 + i] = src[i];
     } // 把src的字符接在dest的后面；
+
+
+
 }
-int main()
+int main(int argc,char*argv[])//argc:传参数的个数（包含可执行程序） argv：指针数组，指向输入的参数
 {
-    zifuzhizheng();
+    //zifuzhizheng();
     /*char dst[100]="hello mike";
     char src[]="123456";
 
     mystrcat(dst,src);
     printf("des=%s\n",dst);*/
+    char *a[]={"aaaaaaa","bbbbbbbb","cccccccc"};
+    int i=0;
+    printf("argc=%d\n",argc);
+    for(i=0;i<argc;i++)
+    {
+        printf("%s\n",argv[i]);
+    }
     return 0;
 }
